@@ -19,35 +19,44 @@
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="300"></ColumnDefinition>
+                            <ColumnDefinition Width="400"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
                             <ColumnDefinition Width="300"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
                         <StackPanel Grid.Column="0" Margin="5">
                             <TextBlock Text="{Binding UserName,
                             StringFormat={}{0}}"
-                                       FontWeight="Bold"></TextBlock>
+                                       FontWeight="Bold" 
+                                       FontSize="20"></TextBlock>
                             <TextBlock Text="{Binding Email,
-                            StringFormat={}{0}}"></TextBlock>
+                            StringFormat={}{0}}"
+                                       FontSize="20"></TextBlock>
                             <TextBlock Text="{Binding DateOfBirth,
-                            StringFormat={}{0:dd.MM.yyyy}}"></TextBlock>
+                            StringFormat={}{0:dd.MM.yyyy}}"
+                                       FontSize="20"></TextBlock>
                             <TextBlock Text="{Binding PhoneNumber,
-                            StringFormat={}{0}}"></TextBlock>
+                            StringFormat={}{0}}"
+                                       FontSize="20"></TextBlock>
                         </StackPanel>
 
                         <TextBlock Grid.Column="1" 
                                    Text="{Binding UserRole.Role,
-                            StringFormat={}{0}}" Margin="20,0,0,0" VerticalAlignment="Center"></TextBlock>
+                            StringFormat={}{0}}"
+                                   Margin="20,0,0,0"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"></TextBlock>
 
                         <Button x:Name="EditButton" Grid.Column="2" Content="Редактировать" Click="EditButton_Click"
-                HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Width="150" Height="35"></Button>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
         <Button x:Name="AddButton" Grid.Row="1" Content="Регистрация" Click="AddButton_Click"
-                HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
+                HorizontalAlignment="Center" VerticalAlignment="Center" 
+                Width="150" Height="35"></Button>
     </Grid>
 </Page>
