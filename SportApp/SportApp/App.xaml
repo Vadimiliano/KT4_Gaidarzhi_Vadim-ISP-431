@@ -13,5 +13,27 @@
             <Setter Property="Background" Value="#FF498C51"></Setter>
             <Setter Property="FontSize" Value="15"></Setter>
         </Style>
+
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="17"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="15"></Setter> 
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter> 
+            <Setter Property="HorizontalContentAlignment" Value="Left"></Setter> 
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="30"></Setter>
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Left"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

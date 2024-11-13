@@ -15,7 +15,6 @@ namespace SportApp.Data
     
     public partial class EmployeeBDEntities : DbContext
     {
-
         private static EmployeeBDEntities _context;
         public EmployeeBDEntities()
             : base("name=EmployeeBDEntities")
@@ -24,19 +23,18 @@ namespace SportApp.Data
 
         public static EmployeeBDEntities GetContext()
         {
-            if(_context == null)
+            if (_context == null)
             {
                 _context = new EmployeeBDEntities();
             }
             return _context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<UserGender> UserGender { get; set; }
         public virtual DbSet<UserRole> UserRole { get; set; }
         public virtual DbSet<Users> Users { get; set; }

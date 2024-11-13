@@ -23,7 +23,7 @@
                             <ColumnDefinition Width="300"></ColumnDefinition>
                             <ColumnDefinition Width="300"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        
+
                         <StackPanel Grid.Column="0" Margin="5">
                             <TextBlock Text="{Binding UserName,
                             StringFormat={}{0}}"
@@ -39,7 +39,7 @@
                         <TextBlock Grid.Column="1" 
                                    Text="{Binding UserRole.Role,
                             StringFormat={}{0}}" Margin="20,0,0,0" VerticalAlignment="Center"></TextBlock>
-                        
+
                         <Button x:Name="EditButton" Grid.Column="2" Content="Редактировать" Click="EditButton_Click"
                 HorizontalAlignment="Center" VerticalAlignment="Center"></Button>
                     </Grid>
